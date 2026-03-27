@@ -22,11 +22,20 @@ public class HomeActivity extends AppCompatActivity {
         Button btnMovies = findViewById(R.id.btnMovies);
         Button btnTheaters = findViewById(R.id.btnTheaters);
         Button btnShowtimes = findViewById(R.id.btnShowtimes);
+        Button btnTicketHistory = findViewById(R.id.btnTicketHistory);
         btnProfile = findViewById(R.id.btnProfile);
 
         btnMovies.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, MoviesActivity.class)));
         btnTheaters.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, TheatersActivity.class)));
         btnShowtimes.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, ShowtimesActivity.class)));
+        btnTicketHistory.setOnClickListener(v -> {
+            if (sessionManager.isLoggedIn()) {
+                startActivity(new Intent(HomeActivity.this, TicketHistoryActivity.class));
+            } else {
+                Toast.makeText(this, "Vui lòng đăng nhập để xem lịch sử vé", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+            }
+        });
 
         updateProfileButton();
 

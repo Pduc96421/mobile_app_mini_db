@@ -27,6 +27,7 @@
         <activity android:name=".ui.ShowtimesActivity" />
         <activity android:name=".ui.SeatSelectionActivity" />
         <activity android:name=".ui.TicketDetailActivity" />
+        <activity android:name=".ui.TicketHistoryActivity" />
     </application>
 
 </manifest>
