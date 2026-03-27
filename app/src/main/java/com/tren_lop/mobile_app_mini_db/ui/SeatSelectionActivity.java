@@ -9,11 +9,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.minipro.R;
-import com.example.minipro.data.AppDatabase;
-import com.example.minipro.data.entity.Showtime;
-import com.example.minipro.data.entity.Ticket;
-import com.example.minipro.utils.SessionManager;
+import com.tren_lop.mobile_app_mini_db.R;
+import com.tren_lop.mobile_app_mini_db.data.AppDatabase;
+import com.tren_lop.mobile_app_mini_db.data.entity.Showtime;
+import com.tren_lop.mobile_app_mini_db.data.entity.Ticket;
+import com.tren_lop.mobile_app_mini_db.utils.SessionManager;
+
 
 public class SeatSelectionActivity extends AppCompatActivity {
     private int showtimeId = -1;

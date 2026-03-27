@@ -6,8 +6,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.minipro.R;
-import com.example.minipro.data.entity.Movie;
+
+import com.tren_lop.mobile_app_mini_db.R;
+import com.tren_lop.mobile_app_mini_db.data.entity.Movie;
+
 import java.util.ArrayList;
 import java.util.List;
 

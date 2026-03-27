@@ -1,4 +1,4 @@
-package com.example.minipro.ui;
+package com.tren_lop.mobile_app_mini_db.ui;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -6,7 +6,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.minipro.R;
+
+import com.tren_lop.mobile_app_mini_db.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
