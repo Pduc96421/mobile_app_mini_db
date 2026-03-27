@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center">
+    android:padding="24dp">
 
     <TextView
         android:id="@+id/tvShowtimeInfo"
@@ -16,12 +16,21 @@
         android:layout_marginBottom="32dp"
         android:gravity="center" />
 
-    <EditText
-        android:id="@+id/etSeatNumber"
+    <TextView
+        android:id="@+id/tvSelectedSeat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Seat Number (e.g. A1, B4)"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Chưa chọn ghế"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnPickSeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Chọn ghế" />
 
     <Button
         android:id="@+id/btnBook"

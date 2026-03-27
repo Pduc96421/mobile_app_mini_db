@@ -18,4 +18,10 @@ public interface TicketDao {
 
     @Query("SELECT * FROM tickets WHERE id = :id LIMIT 1")
     Ticket getTicketById(int id);
+
+    @Query("SELECT seatNumber FROM tickets WHERE showtimeId = :showtimeId")
+    List<String> getBookedSeatsByShowtime(int showtimeId);
+
+    @Query("SELECT COUNT(*) FROM tickets WHERE showtimeId = :showtimeId AND LOWER(seatNumber) = LOWER(:seatNumber)")
+    int countSeatBookings(int showtimeId, String seatNumber);
 }
