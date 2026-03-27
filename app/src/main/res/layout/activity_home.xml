@@ -36,6 +36,13 @@
         android:layout_marginBottom="16dp"/>
 
     <Button
+        android:id="@+id/btnTicketHistory"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Lịch sử vé đã đặt"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
         android:id="@+id/btnProfile"
         android:layout_width="match_parent"
         android:layout_height="60dp"
