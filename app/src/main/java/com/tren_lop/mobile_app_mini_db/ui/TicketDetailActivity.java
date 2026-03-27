@@ -7,9 +7,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.minipro.R;
-import com.example.minipro.data.AppDatabase;
-import com.example.minipro.data.entity.Ticket;
+import com.tren_lop.mobile_app_mini_db.R;
+import com.tren_lop.mobile_app_mini_db.data.AppDatabase;
+import com.tren_lop.mobile_app_mini_db.data.entity.Ticket;
+
 
 public class TicketDetailActivity extends AppCompatActivity {
     private int ticketId = -1;
